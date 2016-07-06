@@ -1,0 +1,25 @@
+{
+  "name": "techdemo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ken Lee <kdblitz@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.7",
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0",
+    "angular-ui-router": "^0.3.1"
+  }
+}
