@@ -27,7 +27,7 @@ gulp.task('develop',
   function () {
     return $.nodemon({
       script: 'backend/devServer.js',
-      ignore: ['app', 'Gulpfile.js', '.idea'],
+      ignore: ['frontend', 'Gulpfile.js', '.idea'],
       tasks: ['semistandard']
     }).on('restart', function () {
       console.log('server restarted!');

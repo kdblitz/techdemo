@@ -1,6 +1,7 @@
 'use strict';
 var webpack = require('webpack');
 var path = require('path');
+var ProvidePlugin = require('webpack/lib/ProvidePlugin');
 
 var PATHS = {};
 PATHS.frontend = path.join(__dirname, 'frontend');
@@ -25,6 +26,9 @@ module.exports = {
       test: /angular\.js$/,
       loader: 'exports?angular'
     }, {
+      tests: /bootstrap\.js$/,
+      loader: 'imports?jQuery=jquery'
+    }, {
       test: /\.js$/,
       loader: 'babel?presets[]=es2015',
       exclude: /node_modules|bower_components/
@@ -44,6 +48,10 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
+    new ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery'
+    }),
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
     )

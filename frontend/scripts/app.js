@@ -1,5 +1,6 @@
+import 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.js';
 import angular from 'angular';
 
 import uiRouter from 'angular-ui-router';
