@@ -29,7 +29,7 @@ function createPostListenAction (options) {
         open: false,
         port: options.BROWSERSYNC_PORT,
         proxy: 'localhost:' + options.PORT,
-        files: ['app/styles.css', 'app/bundle.js', 'app/index.html']
+        files: ['frontend/styles.css', 'frontend/bundle/bundle.js', 'frontend/index.html']
       });
     };
   } else {
