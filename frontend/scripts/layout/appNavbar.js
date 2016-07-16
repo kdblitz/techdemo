@@ -4,7 +4,7 @@ module.component('appNavbar', {
   bindings: {
 
   },
-  controller: function() {
+  controller: function () {
 
   },
   template: require('./appNavbar.html')

@@ -1,5 +1,5 @@
 import module from './module';
 
-module.component('app',{
+module.component('app', {
   template: require('./app.html')
 });
