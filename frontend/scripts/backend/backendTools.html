@@ -1,7 +1,9 @@
 <div class="row">
   <div class="col-sm-3">
     <div class="list-group">
-      <a ui-sref-active="active" ui-sref="backend.tool({toolId:1})" class="list-group-item">Dep a</a>
+      <a class="list-group-item" ui-sref-active="active"
+          ui-sref="backend.tool({toolId:$index})"
+          ng-repeat="backendTool in $ctrl.backendTools">{{backendTool.name}}</a>
     </div>
   </div>
   <div ui-view class="col-sm-9"></div>
