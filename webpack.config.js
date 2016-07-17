@@ -19,7 +19,7 @@ module.exports = {
   },
   resolve: {
     root: [PATHS.myScripts, PATHS.bower],
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.less']
   },
   module: {
     loaders: [ {
@@ -35,6 +35,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style!css'
+    }, {
+      test: /\.less$/,
+      loader: 'style!css?sourceMap!less?sourceMap'
     }, {
       test: /\.(eot|ttf|svg)$/,
       loader: 'file-loader'

@@ -4,7 +4,7 @@ app.config(function ($urlRouterProvider, $stateProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('app', {
+    .state('home', {
       url: '/',
       template: '<home></home>'
     })

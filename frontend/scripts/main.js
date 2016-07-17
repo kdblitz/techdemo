@@ -1,5 +1,7 @@
 import 'jquery';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/main.less';
+
 import 'bootstrap/dist/js/bootstrap.js';
 import angular from 'angular';
 
