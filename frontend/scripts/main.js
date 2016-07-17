@@ -1,3 +1,6 @@
+import 'jquery';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import angular from 'angular';
 
 import app from 'app';
