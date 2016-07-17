@@ -7,5 +7,9 @@ app.config(function ($urlRouterProvider, $stateProvider) {
     .state('app', {
       url: '/home',
       template: 'home'
+    })
+    .state('backend', {
+      url: '/backend',
+      template: '<backend-tools></backend-tools>'
     });
 });
