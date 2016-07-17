@@ -6,7 +6,6 @@ var ProvidePlugin = require('webpack/lib/ProvidePlugin');
 var PATHS = {};
 PATHS.frontend = path.join(__dirname, 'frontend');
 PATHS.myScripts = path.join(PATHS.frontend, 'scripts');
-PATHS.destination = path.join(PATHS.frontend, 'bundle');
 PATHS.bower = path.join(__dirname, 'bower_components');
 console.log(PATHS.bower);
 
@@ -14,7 +13,7 @@ module.exports = {
   context: PATHS.myScripts,
   entry: './main',
   output: {
-    path: PATHS.destination,
+    path: PATHS.frontend,
     filename: 'bundle.js'
   },
   resolve: {

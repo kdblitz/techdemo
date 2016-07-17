@@ -8,7 +8,7 @@ var PATHS = {
   directiveTemplates: 'frontend/**/*.html',
   backendJs: 'backend/**/*.js',
   webpackEntry: 'frontend/scripts/main.js',
-  webpackOutput: 'frontend/bundle/'
+  webpackOutput: 'frontend/'
 };
 PATHS.webpackFiles = [PATHS.frontendJs, PATHS.directiveTemplates,
   'frontend/**/*.less', 'frontend/**/*.css', '!frontend/styles.css'];
