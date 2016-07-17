@@ -1,5 +1,18 @@
 <div class="panel panel-info">
-  <div class="panel-heading">Tool {{$ctrl.tool.name}}</div>
+  <div class="panel-heading">{{$ctrl.tool.name}}</div>
   <div class="panel-body">
+    <div class="col-sm-9">
+      <h3>Description</h3>
+      <ul>
+        <li ng-repeat="description in $ctrl.tool.description" ng-bind-html="description"></li>
+      </ul>
+      <h3>Additional references</h3>
+      <ul>
+        <li ng-repeat="reference in $ctrl.tool.references">
+          <a ng-href="{{reference.link}}" target="_blank">{{reference.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <img class="col-sm-3" ng-src="{{$ctrl.tool.image}}" />
   </div>
 </div>

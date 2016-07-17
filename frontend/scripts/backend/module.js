@@ -1,3 +1,3 @@
 import angular from 'angular';
 
-export default angular.module('backend', []);
+export default angular.module('backend', ['ngSanitize']);

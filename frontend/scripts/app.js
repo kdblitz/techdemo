@@ -1,4 +1,5 @@
 import angular from 'angular';
+import 'angular-sanitize';
 
 import uiRouter from 'angular-ui-router';
 
