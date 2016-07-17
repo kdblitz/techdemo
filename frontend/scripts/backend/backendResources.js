@@ -44,6 +44,17 @@ export default [{
     link: 'https://webpack.github.io/'
   }]
 }, {
+  name: 'Babel',
+  image: 'images/babel.png',
+  description: [
+    'allows usage of ES6 syntax in the frontend by transforming your code to ES5',
+    'extra features (like Promises/Generators) can be used by including polyfill'
+  ],
+  references: [{
+    name: 'Babel site',
+    link: 'https://babeljs.io/'
+  }]
+}, {
   name: 'Semistandard',
   image: 'images/semistandard.svg',
   description: [
