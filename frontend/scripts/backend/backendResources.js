@@ -33,6 +33,11 @@ export default [{
     link: 'https://expressjs.com/en/guide/routing.html'
   }]
 }, {
+  name: 'Gulp',
+  image: 'images/gulp.png',
+  description: [],
+  references: []
+}, {
   name: 'Webpack',
   image: 'images/webpack.gif',
   description: [
