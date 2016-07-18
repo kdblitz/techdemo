@@ -23,7 +23,7 @@ export default [{
     'serves the static files of the application',
     'also defines routing',
     'may use middlewares to help in session management, parsing post parameters, etc',
-    'can be used to define your own API\'s'
+    `can be used to define your own API's`
   ],
   references: [{
     name: 'Express site',
@@ -33,10 +33,27 @@ export default [{
     link: 'https://expressjs.com/en/guide/routing.html'
   }]
 }, {
+  name: 'Nodemon',
+  image: 'images/nodemon.svg',
+  description: [
+    'monitors file changes and reloads node during events',
+    'perfect during development of backend codes'
+  ],
+  references: [{
+    name: 'Nodemon site',
+    link: 'http://nodemon.io/'
+  }]
+}, {
   name: 'Gulp',
   image: 'images/gulp.png',
-  description: [],
-  references: []
+  description: [
+    'workflow management tool',
+    `organize common actions as 'tasks'`
+  ],
+  references: [{
+    name: 'Gulp Documentation',
+    link: 'https://github.com/gulpjs/gulp/tree/master/docs'
+  }]
 }, {
   name: 'Webpack',
   image: 'images/webpack.gif',
@@ -52,8 +69,9 @@ export default [{
   name: 'Babel',
   image: 'images/babel.png',
   description: [
-    'allows usage of ES6 syntax in the frontend by transforming your code to ES5',
-    'extra features (like Promises/Generators) can be used by including polyfill'
+    'javascript compiler',
+    'requires es2015-preset installation to allow usage of ES6 syntax in the frontend by transforming your code to ES5',
+    'import polyfill extra features (like Promises/Generators)'
   ],
   references: [{
     name: 'Babel site',
@@ -64,12 +82,13 @@ export default [{
   image: 'images/semistandard.svg',
   description: [
     'linting tool',
-    'defines the eslint rules so that you won\'t need to manage it',
+    'helps detect potential bugs',
+    `defines the eslint rules so that you won't need to manage it`,
     'uses <a href="http://standardjs.com/rules.html" target="_blank">Standard style</a> + semicolons'
   ],
   references: [{
     name: 'Semistandard link',
-    link: 'https://github.com/Flet/semistandard',
+    link: 'https://github.com/Flet/semistandard'
   }]
 }, {
   name: 'Bower',
@@ -83,5 +102,16 @@ export default [{
   }, {
     name: 'Bower registry',
     link: 'https://bower.io/search/'
+  }]
+}, {
+  name: 'Browsersync',
+  image: 'images/browsersync.png',
+  description: [
+    'file synchronization - automatically refreshes page',
+    'cross browser event synchronization'
+  ],
+  references: [{
+    name: 'Browsersync Documentation',
+    link: 'https://www.browsersync.io/docs'
   }]
 }];
