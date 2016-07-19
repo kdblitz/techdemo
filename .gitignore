@@ -6,3 +6,4 @@ frontend/*.ttf
 frontend/*.svg
 frontend/*.eot
 bundle.js*
+.idea
