@@ -19,7 +19,7 @@ app.config(function ($urlRouterProvider, $stateProvider) {
           return BackendResourcesService.getBackendTool($stateParams.toolId);
         }
       },
-      template: '<tool tool="tool"></tool>',
+      template: '<tool-details tool="tool"></tool-details>',
       controller: function ($scope, tool) {
         $scope.tool = tool;
       }

@@ -2,6 +2,6 @@ import module from './module';
 
 import './BackendResourcesService';
 import './backendTools';
-import './tool';
+import './toolDetails';
 
 export default module.name;
