@@ -36,7 +36,7 @@ export default [{
   name: 'Nodemon',
   image: 'images/nodemon.svg',
   description: [
-    'monitors file changes and reloads node during events',
+    'monitors file changes and reloads node to reflect changes',
     'perfect during development of backend codes'
   ],
   references: [{
@@ -65,6 +65,17 @@ export default [{
     name: 'Webpack site',
     link: 'https://webpack.github.io/'
   }]
+}, {
+  name: 'Less',
+  images: 'images/less.png',
+  description: {
+
+  },
+  references: [{
+
+  }]
+}, {
+  name: 'Post-css'
 }, {
   name: 'Babel',
   image: 'images/babel.png',

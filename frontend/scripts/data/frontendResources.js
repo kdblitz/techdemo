@@ -24,7 +24,14 @@ export default [{
   }]
 }, {
   name: 'jQuery',
-  image: 'images/jquery.svg'
+  image: 'images/jquery.svg',
+  description: [
+    'library for document traversal, manipulation, event handling and animation'
+  ],
+  references: [{
+    name: 'jQuery Documentation',
+    link: 'http://api.jquery.com/'
+  }]
 }, {
   name: 'Bootstrap',
   image: 'images/bootstrap.png',
