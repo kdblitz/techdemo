@@ -14,9 +14,14 @@ app.config(function ($urlRouterProvider, $stateProvider) {
     })
     .state('backend.tool', {
       url: '/tool/:toolId',
-      template: '<tool tool-id="toolId"></tool>',
-      controller: function ($scope, $stateParams) {
-        $scope.toolId = $stateParams.toolId;
+      resolve: {
+        tool: function ($stateParams, BackendResourcesService) {
+          return BackendResourcesService.getBackendTool($stateParams.toolId);
+        }
+      },
+      template: '<tool tool="tool"></tool>',
+      controller: function ($scope, tool) {
+        $scope.tool = tool;
       }
     })
     .state('frontend', {

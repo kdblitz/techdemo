@@ -9,6 +9,10 @@ class BackendResourcesService {
   getBackendTools () {
     return this.tools;
   }
+
+  getBackendTool (idx) {
+    return this.tools[idx];
+  }
 }
 
 module.service('BackendResourcesService', BackendResourcesService);
