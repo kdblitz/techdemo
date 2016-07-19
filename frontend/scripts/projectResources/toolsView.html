@@ -2,8 +2,8 @@
   <div class="col-sm-3">
     <div class="list-group">
       <a class="list-group-item" ui-sref-active="active"
-          ui-sref="backend.tool({toolId:$index})"
-          ng-repeat="backendTool in $ctrl.backendTools">{{backendTool.name}}</a>
+          ui-sref=".tool({toolId:$index})"
+          ng-repeat="tool in $ctrl.tools">{{tool.name}}</a>
     </div>
   </div>
   <div ui-view class="col-sm-9"></div>

@@ -3,7 +3,7 @@ import module from './module';
 module.component('backendTools', {
   bindings: {},
   controller: function (BackendResourcesService) {
-    this.backendTools = BackendResourcesService.getBackendTools();
+    this.tools = BackendResourcesService.getResources();
   },
-  template: require('./backendTools.html')
+  template: require('./toolsView.html')
 });
