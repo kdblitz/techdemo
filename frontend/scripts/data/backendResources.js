@@ -59,23 +59,12 @@ export default [{
   image: 'images/webpack.gif',
   description: [
     'module bundler',
-    'uses loaders as extensions to support different post-processing'
+    `uses <em>loaders</em> as extensions to support processing of different file types`
   ],
   references: [{
     name: 'Webpack site',
     link: 'https://webpack.github.io/'
   }]
-}, {
-  name: 'Less',
-  images: 'images/less.png',
-  description: {
-
-  },
-  references: [{
-
-  }]
-}, {
-  name: 'Post-css'
 }, {
   name: 'Babel',
   image: 'images/babel.png',
@@ -87,6 +76,33 @@ export default [{
   references: [{
     name: 'Babel site',
     link: 'https://babeljs.io/'
+  }, {
+    name: 'ES6 Features',
+    link: 'http://es6-features.org/'
+  }]
+}, {
+  name: 'PostCSS',
+  image: 'images/postcss.png',
+  description: [
+    'css transformer which uses other plugins',
+    'ex. Autoprefixer plugin can be used so add vendor prefixes to css'
+  ],
+  references: [{
+    name: 'PostCSS site',
+    link: 'https://github.com/postcss/postcss'
+  }, {
+    name: 'Autoprefixer site',
+    link: 'https://github.com/postcss/autoprefixer'
+  }]
+}, {
+  name: 'Less',
+  image: 'images/less.png',
+  description: [
+    'css pre-processor'
+  ],
+  references: [{
+    name: 'Less language features',
+    link: 'http://lesscss.org/features/'
   }]
 }, {
   name: 'Semistandard',
