@@ -42,5 +42,9 @@ app.config(function ($urlRouterProvider, $stateProvider) {
     .state('extra.tool', getToolStateConfiguration({
       tool: ($stateParams, ExtraResourcesService) =>
         ExtraResourcesService.getResource($stateParams.toolId)
-    }));
+    }))
+    .state('about', {
+      url: '/about',
+      template: '<about></about>'
+    });
 });

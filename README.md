@@ -13,7 +13,7 @@ To simply run the site:
 1. npm install
 2. npm start
 
-Then you can access the site to [localhost](http://localhost:8906)
+Then you can access the site from [localhost](http://localhost:8906)
 
 To run on developer mode:
 
