@@ -2,6 +2,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var ProvidePlugin = require('webpack/lib/ProvidePlugin');
+var autoprefixer = require('autoprefixer');
 
 var PATHS = {};
 PATHS.frontend = path.join(__dirname, 'frontend');
@@ -33,10 +34,10 @@ module.exports = {
       exclude: /node_modules|bower_components/
     }, {
       test: /\.css$/,
-      loader: 'style!css'
+      loader: 'style!css!postcss-loader?sourceMap'
     }, {
       test: /\.less$/,
-      loader: 'style!css?sourceMap!less?sourceMap'
+      loader: 'style!css?sourceMap!postcss-loader?sourceMap!less?sourceMap'
     }, {
       test: /\.(eot|ttf|svg)$/,
       loader: 'file-loader'
@@ -47,6 +48,9 @@ module.exports = {
       test: /\.html$/,
       loader: 'html?attrs=false'
     }]
+  },
+  postcss: function () {
+    return [autoprefixer];
   },
   devtool: 'source-map',
   plugins: [
