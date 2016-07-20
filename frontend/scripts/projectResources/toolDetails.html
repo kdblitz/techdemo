@@ -6,7 +6,7 @@
       <ul>
         <li ng-repeat="description in $ctrl.tool.description" ng-bind-html="description"></li>
       </ul>
-      <h3>Additional references</h3>
+      <h3 ng-show="$ctrl.tool.references">Additional references</h3>
       <ul>
         <li ng-repeat="reference in $ctrl.tool.references">
           <a ng-href="{{reference.link}}" target="_blank">{{reference.name}}</a>
