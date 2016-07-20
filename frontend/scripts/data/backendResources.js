@@ -6,6 +6,9 @@ export default [{
     'comes pre-installed with <abbr title="Node package manager">NPM</abbr>',
     'can support <abbr title="ECMAScript 6">ES6</abbr> features(more common ones) as of v4.0'
   ],
+  files: [
+    'package.json - contains the list of backend dependencies and some may also contain scripts'
+  ],
   references: [{
     name: 'Node.JS Documentation',
     link: 'https://nodejs.org/en/docs/'
@@ -25,6 +28,10 @@ export default [{
     'may use middlewares to help in session management, parsing post parameters, etc',
     `can be used to define your own API's`
   ],
+  files: [
+    'backend/server.js - runs the server',
+    'backend/routes.js - specifies the routing'
+  ],
   references: [{
     name: 'Express site',
     link: 'https://expressjs.com/'
@@ -33,26 +40,32 @@ export default [{
     link: 'https://expressjs.com/en/guide/routing.html'
   }]
 }, {
+  name: 'Gulp',
+  image: 'images/gulp.png',
+  description: [
+    'workflow management tool',
+    `organize common actions as <em>tasks</em>`
+  ],
+  files: [
+    'Gulpfile.js - specifies the tasks which can be invoked'
+  ],
+  references: [{
+    name: 'Gulp Documentation',
+    link: 'https://github.com/gulpjs/gulp/tree/master/docs'
+  }]
+}, {
   name: 'Nodemon',
   image: 'images/nodemon.svg',
   description: [
     'monitors file changes and reloads node to reflect changes',
     'perfect during development of backend codes'
   ],
+  files: [
+    `Gulpfile.js - under 'develop' task`
+  ],
   references: [{
     name: 'Nodemon site',
     link: 'http://nodemon.io/'
-  }]
-}, {
-  name: 'Gulp',
-  image: 'images/gulp.png',
-  description: [
-    'workflow management tool',
-    `organize common actions as 'tasks'`
-  ],
-  references: [{
-    name: 'Gulp Documentation',
-    link: 'https://github.com/gulpjs/gulp/tree/master/docs'
   }]
 }, {
   name: 'Webpack',
@@ -60,6 +73,10 @@ export default [{
   description: [
     'module bundler',
     `uses <em>loaders</em> as extensions to support processing of different file types`
+  ],
+  files: [
+    `Gulpfile.js - under 'webpack' task`,
+    'webpack.config.js - webpack configuration to entry file, loaders, etc.'
   ],
   references: [{
     name: 'Webpack site',
@@ -73,6 +90,9 @@ export default [{
     'requires es2015-preset installation to allow usage of ES6 syntax in the frontend by transforming your code to ES5',
     'import polyfill extra features (like Promises/Generators)'
   ],
+  files: [
+    'webpack.config.js - via babel loader'
+  ],
   references: [{
     name: 'Babel site',
     link: 'https://babeljs.io/'
@@ -81,11 +101,14 @@ export default [{
     link: 'http://es6-features.org/'
   }]
 }, {
-  name: 'PostCSS',
+  name: 'PostCSS + Autoprefixer',
   image: 'images/postcss.png',
   description: [
-    'css transformer which uses other plugins',
-    'ex. Autoprefixer plugin can be used so add vendor prefixes to css'
+    'css transformer',
+    'Autoprefixer plugin can be used so add vendor prefixes to css'
+  ],
+  files: [
+    'webpack.config.js - via postcss loader'
   ],
   references: [{
     name: 'PostCSS site',
@@ -93,12 +116,19 @@ export default [{
   }, {
     name: 'Autoprefixer site',
     link: 'https://github.com/postcss/autoprefixer'
+  }, {
+    name: 'cssnext (another interesting plugin)',
+    link: 'http://cssnext.io/'
   }]
 }, {
   name: 'Less',
   image: 'images/less.png',
   description: [
-    'css pre-processor'
+    'css pre-processor',
+    'variable declaration, nested css rules, css file imports, and more'
+  ],
+  files: [
+    'webpack.config.js - via less loader'
   ],
   references: [{
     name: 'Less language features',
@@ -113,6 +143,9 @@ export default [{
     `defines the eslint rules so that you won't need to manage it`,
     'uses <a href="http://standardjs.com/rules.html" target="_blank">Standard style</a> + semicolons'
   ],
+  files: [
+    `Gulpfile.js - under 'semistandard' task`
+  ],
   references: [{
     name: 'Semistandard link',
     link: 'https://github.com/Flet/semistandard'
@@ -122,6 +155,9 @@ export default [{
   image: 'images/bower.png',
   description: [
     'manages frontend dependencies of the application'
+  ],
+  files: [
+    'bower.json - contains the list of frontend dependency'
   ],
   references: [{
     name: 'Bower commands',
@@ -136,6 +172,9 @@ export default [{
   description: [
     'file synchronization - automatically refreshes page',
     'cross browser event synchronization'
+  ],
+  files: [
+    'server.js - under createPostListenAction function'
   ],
   references: [{
     name: 'Browsersync Documentation',

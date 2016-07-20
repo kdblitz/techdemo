@@ -23,7 +23,7 @@ gulp.task('default', ['develop', 'verify'], function () {
 });
 
 gulp.task('develop',
-  ['webpack'/*, /*'frontend-test-dev'*/, 'watch'],
+  ['webpack', 'watch'],
   function () {
     return $.nodemon({
       script: 'backend/devServer.js',

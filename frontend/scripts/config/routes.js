@@ -24,26 +24,23 @@ app.config(function ($urlRouterProvider, $stateProvider) {
       template: '<backend-tools></backend-tools>'
     })
     .state('backend.tool', getToolStateConfiguration({
-      tool: function ($stateParams, BackendResourcesService) {
-        return BackendResourcesService.getResource($stateParams.toolId);
-      }
+      tool: ($stateParams, BackendResourcesService) =>
+        BackendResourcesService.getResource($stateParams.toolId)
     }))
     .state('frontend', {
       url: '/frontend',
       template: '<frontend-tools></frontend-tools>'
     })
     .state('frontend.tool', getToolStateConfiguration({
-      tool: function ($stateParams, FrontendResourcesService) {
-        return FrontendResourcesService.getResource($stateParams.toolId);
-      }
+      tool: ($stateParams, FrontendResourcesService) =>
+        FrontendResourcesService.getResource($stateParams.toolId)
     }))
     .state('extra', {
       url: '/extra',
       template: '<extra-tools></extra-tools>'
     })
     .state('extra.tool', getToolStateConfiguration({
-      tool: function ($stateParams, ExtraResourcesService) {
-        return ExtraResourcesService.getResource($stateParams.toolId);
-      }
+      tool: ($stateParams, ExtraResourcesService) =>
+        ExtraResourcesService.getResource($stateParams.toolId)
     }));
 });

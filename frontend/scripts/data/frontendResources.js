@@ -4,11 +4,15 @@ export default [{
   description: [
     'currently using 1.4 (but will be transitioning to 1.5 and eventually 2.0)'
   ],
+  files: [
+    'most of the files in the frontend folder (those importing angular)'
+  ],
   references: [{
     name: 'Angular site',
     link: 'https://angularjs.org/'
   }, {
-    name: 'Angular 1 documentation'
+    name: 'Angular 1 documentation',
+    link: 'https://docs.angularjs.org/api'
   }]
 }, {
   name: 'UI Router',
@@ -17,6 +21,9 @@ export default [{
     'routing framework for AngularJS',
     'routes organized as a state machine',
     'allows nested states'
+  ],
+  files: [
+    'frontend/scripts/config/routes.js - contains the state transitions'
   ],
   references: [{
     name: 'UI Router Documentation',
@@ -28,6 +35,9 @@ export default [{
   description: [
     'library for document traversal, manipulation, event handling and animation'
   ],
+  files: [
+    'not directly used, bootstrap dependency'
+  ],
   references: [{
     name: 'jQuery Documentation',
     link: 'http://api.jquery.com/'
@@ -38,6 +48,9 @@ export default [{
   description: [
     `well not completely<span title="we are using an customized version for Nokia">...</span>`,
     'manages the layout and overall look and feel of the site'
+  ],
+  files: [
+    'used by html templates of directives'
   ],
   references: [{
     name: 'Bootstrap documentation',

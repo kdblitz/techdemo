@@ -6,6 +6,10 @@
       <ul>
         <li ng-repeat="description in $ctrl.tool.description" ng-bind-html="description"></li>
       </ul>
+      <h3 ng-show="$ctrl.tool.files">Under the hood</h3>
+      <ul>
+        <li ng-repeat="file in $ctrl.tool.files">{{file}}</li>
+      </ul>
       <h3 ng-show="$ctrl.tool.references">Additional references</h3>
       <ul>
         <li ng-repeat="reference in $ctrl.tool.references">
