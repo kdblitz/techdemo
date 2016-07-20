@@ -27,4 +27,11 @@ export default [{
     name: 'Postman plugin',
     link: 'https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en'
   }]
+}, {
+  name: 'Google',
+  hide: true,
+  image: 'images/googlefu.jpg',
+  description: [
+    'for glue-ing things together'
+  ]
 }];
