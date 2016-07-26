@@ -1,9 +1,9 @@
 # Javascript Developer Toolbox Tech Demo
 
-How to deploy the site:
+Download and install these programs first before running the site:
 
 1. Install [node.js](https://nodejs.org/en/)
-2. Install bower and gulp globally
+2. Install bower and gulp globally afterwards
 ```bash
 npm install -g bower gulp
 ```
